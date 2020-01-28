@@ -11,8 +11,8 @@
 
     </style>
 
-    <style name="ThemeOverlay.App.White" parent="ThemeOverlay.MaterialComponents">
-        <item name="colorOnSurface">#fff</item>
+    <style name="ThemeOverlay.App.White87ARGB" parent="ThemeOverlay.MaterialComponents">
+        <item name="colorOnSurface">#DEFFFFFF</item>
     </style>
 
 </resources>

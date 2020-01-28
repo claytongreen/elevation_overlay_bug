@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<TextView>(R.id.white_87).setMaterialShapeDrawable()
-        findViewById<TextView>(R.id.white).setMaterialShapeDrawable()
+        findViewById<TextView>(R.id.white_87_argb).setMaterialShapeDrawable()
 
         findViewById<Button>(R.id.button).setOnClickListener {
             val currentNightMode =
