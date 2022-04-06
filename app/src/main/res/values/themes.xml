@@ -2,13 +2,10 @@
 <resources>
 
     <style name="AppTheme.Base" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="AppTheme" parent="AppTheme.Base">
-
+        <item name="android:windowBackground">?colorSurface</item>
     </style>
 
     <style name="ThemeOverlay.App.White87ARGB" parent="ThemeOverlay.MaterialComponents">

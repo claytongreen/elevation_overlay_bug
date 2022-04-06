@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
+    android:clipChildren="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingVertical="64dp"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/white_87"
@@ -14,34 +15,55 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:text="colorOnSurface: @color/white_87"
-        app:layout_constraintBottom_toTopOf="@id/white_87_argb"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/white_87_compat_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:text="colorOnSurface: @color/white_87\nSHADOW_COMPAT_MODE_DEFAULT"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/white_87_compat_never"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:text="colorOnSurface: @color/white_87\nSHADOW_COMPAT_MODE_NEVER"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/white_87_compat_always"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:text="colorOnSurface: @color/white_87\nSHADOW_COMPAT_MODE_ALWAYS"
+        android:textAlignment="center" />
 
     <TextView
         android:id="@+id/white_87_argb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:padding="16dp"
         android:text="colorOnSurface: #DEFFFFFF"
-        android:theme="@style/ThemeOverlay.App.White87ARGB"
-        app:layout_constraintBottom_toTopOf="@id/button"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/white_87"
-        />
+        android:textAlignment="center"
+        android:theme="@style/ThemeOverlay.App.White87ARGB" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Toggle Dark Mode"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        />
+        android:text="Toggle Night Mode" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
